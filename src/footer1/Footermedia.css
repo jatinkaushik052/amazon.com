@@ -1,0 +1,15 @@
+@media (min-width:425px) and (max-width:768px){
+    .footer1{
+        padding-left: 100px;
+        padding-right: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .footer1 .f1{
+     
+        width: 50%;
+    }
+    .footer1 .f1 a{
+       font-size: 16px;
+    }
+}

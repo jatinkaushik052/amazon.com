@@ -1,0 +1,14 @@
+.backtotop{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #37475A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backtotop a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}

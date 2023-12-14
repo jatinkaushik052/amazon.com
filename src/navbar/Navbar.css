@@ -1,0 +1,121 @@
+
+nav{
+    background-color: rgb(5, 0, 23);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow: hidden;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamburgur{
+    display: none;
+}
+.logo img{
+    width: 130px;
+    height: 30px;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location-txt .line1{
+    font-size: 12px;
+    color: #cccccc;
+}
+.location-txt .line2{
+    font-size: 14px;
+    color: white;
+}
+.nav-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 14px;
+    padding: 10px 4px 10px 3px;
+}
+.nav-search .select-nav select{
+    font-size: 14px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 35px;
+    padding: 0px 10px;
+}
+.nav-search .input-serach input{
+    height: 35px;
+    width: 250px;
+    border: none;
+    color: #111;
+    line-height: 15px;
+}
+.nav-search .serach-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 45px;
+    font-size: 24px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #febd68;
+}
+.nav-language{
+    display: flex;
+}
+.nav-language .lang-flag img{
+    width: 22px;
+    height: 16px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.login .line1{
+    font-size: 12px;
+}
+.login .line2{
+    font-size: 12px;
+}
+.login .line2 select{
+    font-size: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.order .line1{
+    font-size: 12px;
+}
+.order .line2{
+    font-size: 14px;
+}
+.signin{
+    display: none;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart .cart-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.nav-p2{
+    display: none;
+}
