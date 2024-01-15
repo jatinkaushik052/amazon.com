@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Store: Buy Home & Kitchen products online at best prices in India - Amazon.in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class='logo '>
+             <div class='hamburgur' ><i class='bx bx-menu'></i></div>
+            <img src='https://www.logo.wine/a/logo/Amazon_(company)/Amazon_(company)-Logo.wine.svg' alt='logo'/>
+        </div>
+        <div class='location border'>
+            <span class='location-icon'><i class='bx bx-location-plus' style="color: white;" ></i></span>
+            <div class='location-txt'>
+                <p class='line1'>Hello</p>
+                <p class='line2'>Select Your Address</p>
+            </div>
+        </div>
+        <div class='nav-search '>
+            <div class='select-nav'>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class='input-serach'>
+                <input type='text' placeholder='Search Amazon.in' />
+            </div>
+            <div class='serach-icon'><i class='bx bx-search' style="color: black;"></i></div>
+        </div>
+        <div class='nav-language border'>
+            <span class='lang-flag'><img src='flag.svg' alt='lang-flg'
+            /></span>
+            <div class='lang-select'>
+                <select>
+                    <option>EN</option>
+                </select>
+            </div>
+        </div>
+        <div class='login border'>
+            <p class='line1'>Hello,sign in</p>
+            <p class='line2'>Account & Lists
+                <select>
+                    <option></option>
+                </select></p>
+          
+        </div>
+        <div class='order border'>
+            <p class='line1'>Returns</p>
+            <p class='line2'>& Orders</p>
+        </div>
+        <div class='cart border'>
+            <div class='signin'>
+                Sign in <i class='bx bx-chevron-right'></i><i class='bx bx-user'></i>
+            </div>
+         <div class='cart-icon' ><i class='bx bx-cart-add'></i>
+        <b class="cart-item">0</b></div>
+            <p class='line2'>Cart</p>
+        </div>  
+    </nav>
+    <!-- Add to cart Page -->
+        <div class="cartPage">
+            <button id="closebtn">Close</button>
+            <div class="totalProduct">
+                Total Product:<b id="totalPr">0</b>
+            </div>
+        </div>
+    <!-- Add to cart page end -->
+    <div class='nav-p2 '>
+        <div class='input-nav-p2'>
+            <input type='text' placeholder='Search Amazon.in'/>
+            <div class='serach-icon'><i class='bx bx-search' style="color: black;"></i></div>
+        </div>
+        <div class='nav-p2-links'>
+            <span class='nav-p2 pa'>
+                <p style="font-style: 14px;">Shop By</p>
+                <p style="font-size: 16px; padding-top: 2px;">Category</p>
+            </span>
+
+            <ul>
+                <li><a href='/'>Your Lists</a></li>
+                <li><a href='/'>Deals</a></li>
+                <li><a href='/'>Sell</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class='nav'>
+        <div class='hamburgar border'><i class='bx bx-menu'>All</i></div>
+        <div class='nav-links'>
+            <a class="border" href='/'>Amazon miniTV</a>
+            <a class="border" href='/'>Sell</a>
+            <a class="border" href='/'>Best Seller</a>
+            <a class="border" href='/'>Today's Deals</a>
+            <a class="border" href='/'>Mobiles</a>
+        </div>
+        <div class='amaozon-ad'>
+           <img src='/image/app-logo.jpg' alt='applogo'/>Shopping made easy | Download the app
+        </div>
+        <div class='location-nav2'>
+        <i class='bx bx-location-plus' style="color: white;" >Update location</i>
+        </div>
+    </div>
+
+
+    <!-- hero section -->
+    <div class='hero'>
+        <div class='hero-img'>
+            <img src='https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/31/img22/Toys/HTL2023/GW/Homepage_DesktopHeroTemplate_3000x1200-Toy-Fiesta-APAY_2x_unrec._CB570529351_.jpg ' alt='brand'></img>
+        </div>
+        <div class='hero-card'>
+            <div class='card'>
+                <h1>Starting ₹99| Start your fitness journey</h1>
+                <img src='https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/31/img19/Sports/GW_Desktop/1199101_379x304_Compressed._SY304_CB448278349_.jpg' alt='kurtapajma' />
+                <a href='/'>see more</a>
+                <div class="btn">
+                    <button id="cartbtn" onclick="AddtoCart()" type='submit'>Add to Cart</button>
+                    <button id="buybtn" type="submit">Buy</button>
+                </div>  
+            </div>
+            <div class='card'>
+                <h1>Up to 60% off | Car, bike parts & accessories</h1>
+                <img src='https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/31/2023/GateWay/December/CC/PC_379x304_1._SY304_CB572341311_.jpg' alt='kurtapajma' />
+                <a href='/'>see more</a>
+               <div class="btn">
+                    <button id="cartbtn" onclick="AddtoCart()" type='submit'>Add to Cart</button>
+                    <button id="buybtn" type="submit">Buy</button>
+                </div>  
+            </div>
+            <div class='card' id="p1">
+                <h1>Up to 20% off | Kurta Pajama</h1>
+                <img src='1.jpg' alt='kurtapajma' />
+                <a href='/'>see more</a>
+                <div class="btn">
+                    <button id="cartbtn" onclick="AddtoCart()" type='submit'>Add to Cart</button>
+                    <button id="buybtn" type="submit">Buy</button>
+                </div>  
+            </div>
+            <div class='card'>
+                <h1>Women's Polyester Jacket</h1>
+                <img src='https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61iZMVtMAoL._SY741_.jpg' alt='kurtapajma' />
+                <a href='/'>see more</a>
+                <div class="btn">
+                    <button id="cartbtn" onclick="AddtoCart()" type='submit'>Add to Cart</button>
+                    <button id="buybtn" type="submit">Buy</button>
+                </div> 
+            </div>
+            <div class='card'>
+                <h1>Starting ₹99 | Indoor plants & more</h1>
+                <img src='https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/31/img18/Lawn_Garden/Ud/MSO_May/compressed_379x304_compressed._SY304_CB592193370_.jpg' alt='kurtapajma' />
+                <a href='/'>see more</a>
+                <div class="btn">
+                    <button id="cartbtn" onclick="AddtoCart()" type='submit'>Add to Cart</button>
+                    <button id="buybtn" type="submit">Buy</button>
+                </div>  
+            </div>
+           
+            <div class='card'>
+                <h1>Women Style Faux  Handbag</h1>
+                <img src='https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61Fa7wW9FvL._AC_UL320_.jpg' alt='kurtapajma' />
+                <a href='/'>see more</a>
+                <div class="btn">
+                    <button id="cartbtn" onclick="AddtoCart()" type='submit'>Add to Cart</button>
+                    <button id="buybtn" type="submit">Buy</button>
+                </div>  
+            </div>
+            <div class='card mobile-card'>
+                <h1>New season streaming now | Watch only on miniTV</h1>
+                <img src='https://images-eu.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/31/img17/Home/AmazonTV/Campus_Beats/PC_CC/DeskCC-379x304_Campus-Beats-S3_V2._SY304_CB572320011_.jpg' alt='kurtapajma' />
+               <!-- <a href='/'>Watch more free content</a> 
+               <button type='submit' style="background-color: blue; color: white;">Watch Now</button>  -->
+            </div>
+            <div class='card'>
+                <h1>Women Style Faux  Handbag</h1>
+                <img src='https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61Fa7wW9FvL._AC_UL320_.jpg' alt='kurtapajma' />
+                <a href='/'>see more</a>
+               <div class="btn">
+                    <button id="cartbtn" onclick="AddtoCart()" type='submit'>Add to Cart</button>
+                    <button id="buybtn" type="submit">Buy</button>
+                </div> 
+            </div>
+            <div class='card'>
+                <h1>Maybelline New York Lipstick</h1>
+                <img src='https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51jD170ZkGL._AC_UL320_.jpg' alt='kurtapajma' />
+                <a href='/'>see more</a>
+                <div class="btn">
+                    <button id="cartbtn" onclick="AddtoCart()" type='submit'>Add to Cart</button>
+                    <button id="buybtn" type="submit">Buy</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class='backtotop'><a href='/'>Back to top</a></div>
+
+    <!-- footer -->
+    <div class='footer1'>
+        <div class='foooter1-card'>
+        <div class='f1'>
+            <h3>Get to Know Us</h3>
+            <a href='/'>About Us</a>
+            <a href='/'>Careers</a>
+            <a href='/'>Press Releases</a>
+            <a href='/'>Amazon Science</a>
+        </div>
+        <div class='f1'>
+            <h3>Connect with Us</h3>
+            <a href='/'>Facebook</a>
+            <a href='/'>Twitter</a>
+            <a href='/'>Instagram</a>
+        </div>
+        <div class='f1'>
+            <h3>Make Money with Us</h3>
+            <a href='/'>Sell on Amazon</a>
+            <a href='/'>Sell under Amazon Accelerator</a>
+            <a href='/'>Protect and Build Your Brand</a>
+            <a href='/'>Amazon Global Selling</a>
+            <a href='/'>Become an Affiliate</a>
+            <a href='/'>Fulfilment by Amazon</a>
+            <a href='/'>Advertise Your Products</a>
+            <a href='/'>Amazon Pay on Merchants</a>
+        </div>
+        <div class='f1'>
+            <h3>Let Us Help You</h3>
+            <a href='/'>COVID-19 and Amazon</a>
+            <a href='/'>Your Account</a>
+            <a href='/'>Returns Centre</a>
+            <a href='/'>100% Purchase Protection</a>
+            <a href='/'>Amazon App Download</a>
+            <a href='/'>Help</a>
+        
+        </div>
+        </div>
+       
+    </div>
+    <footer>
+        <div class='mainfooter'>
+            <a href='/'>Conditions of Use & Sale</a>
+            <a href='/'>Privacy Notice</a>
+            <a href='/'>Interest-Based Ads</a>
+        </div>
+        <p>© 1996-2023, Amazon.com, Inc. or its affiliates(Jatin Kaushik)</p>
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>

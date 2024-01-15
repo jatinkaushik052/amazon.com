@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+    <!-- Saffron color -->
+    <rect width="1200" height="267" fill="#FF9933" />
+
+    <!-- White color -->
+    <rect y="267" width="1200" height="267" fill="#FFFFFF" />
+
+    <!-- Green color -->
+    <rect y="534" width="1200" height="267" fill="#138808" />
+
+    <!-- Navy blue Ashoka Chakra -->
+    <circle cx="600" cy="400" r="90" fill="#000080" />
+
+    <!-- 24 spokes of the Ashoka Chakra -->
+    <line x1="600" y1="400" x2="600" y2="310" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" transform="rotate(15, 600, 400)" />
+    <!-- Repeat the line element 23 more times, each rotated by 15 degrees -->
+    <!-- ... -->
+
+</svg>
