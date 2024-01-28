@@ -1,0 +1,134 @@
+body{
+    background-color: rgb(229, 226, 226);
+}
+.bagItemList{
+    display: flex;
+   
+}
+.bagLeft{
+    background-color: white;
+    width: 70%;
+    margin: 20px 20px;
+    padding: 10px 10px;
+}
+.bagLeftItem{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.delItem{
+    cursor: pointer;
+}
+.leftItemContainer{
+    display: flex;
+    margin-top: 10px;
+}
+.bagItemImg{
+    width: 230px;
+}
+.itemDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.bagRight{
+    background-color: white;
+    width: 25%;
+    margin: 20px 20px;
+    padding: 10px 10px;
+   height: 180px;
+}
+.totolPrice, .discountPrice, .conveniencePrice, .totalPrice{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+.placeOrder{
+    margin-top: 10px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+@media (width <=600px) {
+    .bagItemList{
+        flex-direction: column;
+    }
+    .bagLeft{
+        width: 90%;
+        margin: 20px calc(100%-10%);
+        padding: 5px 10px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .bagItemImg{
+        width: 80px;
+    }
+    
+    .bagRight{
+        width: 90%;
+        margin: 20px calc(100%-10%);
+    }
+}
+@media (min-width: 601px) and (max-width: 768px){
+        .bagItemList{
+            flex-direction: column;
+        }
+        .bagLeft{
+            width: 90%;
+            margin: 20px calc(100%-10%);
+            padding: 5px 10px;
+        }
+        h1{
+            font-size: 15px;
+        }
+        p{
+            font-size: 13px;
+        }
+        .bagItemImg{
+            width: 90px;
+        }
+        
+        .bagRight{
+            width: 90%;
+            margin: 20px calc(100%-10%);
+        }
+}
+@media (min-width: 769px) and (max-width: 992px){
+    .bagItemList{
+        flex-direction: column;
+    }
+    .bagLeft{
+        width: 90%;
+        margin: 20px calc(100%-10%);
+        padding: 5px 10px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .bagItemImg{
+        width: 130px;
+    }
+    
+    .bagRight{
+        width: 90%;
+        margin: 20px calc(100%-10%);
+    }
+}
