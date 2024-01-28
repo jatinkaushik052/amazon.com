@@ -1,28 +1,51 @@
-console.log("Hello Amazon")
-var i = 0;
-document.querySelector('.cart-item').innerHTML = i;
-document.getElementById('totalPr').innerHTML = i;
+console.log("Hello my Script")
+let bagItems;
 
-function AddtoCart() {
-    i = i + 1
-    document.querySelector('.cart-item').innerHTML = i;
-    document.getElementById('totalPr').innerHTML = i;
-    console.log(i)
-    
+
+function addToBag(itemId){
+    bagItems.push(itemId)
+    localStorage.setItem('bagItems',JSON.stringify(bagItems))
+    displayBagIcon()
 }
-// const p1= document.getElementById('p1');
-function item1(){
-   document.querySelector('.cartPage').addEventListener("click",()=>{
-        console.log("first item is add")
+
+function displayBagIcon(){
+    let bagitemCountElement=document.querySelector(".bagItem")
+    if(bagItems.length>0){
+        bagitemCountElement.style.visibility="visible"
+        bagitemCountElement.innerText= bagItems.length
+    }
+    else{
+        bagitemCountElement.style.visibility="hidden"
+    }
+}
+
+
+const itemContainerElement = document.querySelector(".hero-card");
+let innerHTML='';
+
+
+
+function displayItemShow(){
+    items.forEach(item =>{
+        innerHTML += `<div class='card'> 
+        <h1 class="itemDiscount">${item.item_Discount}</h1>
+        <img  class="itemImg" src=${item.item_image} alt='kurtapajma' />
+        <a href='/'>${item.item_Price}</a>
+        <div class="btn">
+            <button id="cartbtn" class="cartButton" type='submit' onClick=addToBag(${item.id})>Add to Cart</button>
+            <button id="buybtn" type="submit">Buy</button> 
+        </div>
+        </div>`
     })
-
+    itemContainerElement.innerHTML=innerHTML;
 }
-item1()
-document.querySelector(".cart-icon").addEventListener("click",()=>{
-    document.querySelector(".cartPage").style.display="block"
-})
-document.querySelector("#closebtn").addEventListener("click",()=>{
-    document.querySelector(".cartPage").style.display="none"
-})
 
+ 
 
+function onLoad(){
+    let bagItemStr= localStorage.getItem('bagItems')
+    bagItems= bagItemStr ? JSON.parse(bagItemStr):[]
+    displayItemShow()
+    displayBagIcon()
+}
+onLoad()
